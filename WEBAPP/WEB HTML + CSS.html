@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Black background */
+    color: #ff0000; /* Red text color */
+}
+
+.app {
+    text-align: center;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff0000; /* Red heading color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 3px; /* Add letter spacing */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #ff0000, #990000); /* Red gradient background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s; /* Add a transition for hover effect */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #990000, #ff0000); /* Change the gradient on hover */
+}
+
+/* Add animation for the button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+button:hover {
+    animation: pulse 0.5s infinite; /* Apply the pulse animation on hover */
+}
+</style>
+<body>
+    <div class="app">
+        <h1>My Awesome Web App</h1>
+        <button id="changeColorButton">Change Background Color</button>
+    </div>
+    <script src="E:\HTML\CHATGPT\WEBAPP\script.js"></script>
+</body>
+</html>

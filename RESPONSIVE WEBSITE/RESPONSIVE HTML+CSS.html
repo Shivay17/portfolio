@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdf00;
+}
+
+main {
+    padding: 20px;
+}
+
+aside {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: #ff0000;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s;
+    }
+
+    nav.active ul li {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav.active ul a {
+        color: #fff;
+        padding: 10px 0;
+    }
+}
+
+/* Animate the header background color on hover */
+header:hover {
+    background-color: #111;
+    transition: background-color 0.3s;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Responsive Design Website</h1>
+        <button id="menu-toggle">Menu</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome to our website</h2>
+            <p>This is the main content area.</p>
+        </section>
+    </main>
+    <aside>
+        <h3>Sidebar</h3>
+        <ul>
+            <li><a href="#">Sidebar Item 1</a></li>
+            <li><a href="#">Sidebar Item 2</a></li>
+            <li><a href="#">Sidebar Item 3</a></li>
+        </ul>
+    </aside>
+</body>
+</html>

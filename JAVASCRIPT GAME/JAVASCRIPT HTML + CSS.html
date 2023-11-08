@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ff0000;
+}
+
+header {
+    background-color: #000;
+    color: #ff0000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust for header height */
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.target {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+/* Add styles for active target element here */
+
+/* Advanced CSS for target element on hover and active */
+.target:hover {
+    transform: scale(1.1); /* Enlarge the target on hover */
+}
+
+.target:active {
+    background-color: #000; /* Change the background color when clicked */
+    box-shadow: 0 0 5px 2px #ff0000; /* Add a glow effect */
+}
+
+</style>
+<body>
+    <header>
+        <h1>Interactive JavaScript Game</h1>
+        <p>Score: <span id="score">0</span></p>
+    </header>
+    <main>
+        <div class="game-container">
+            <div class="target" id="target1"></div>
+            <div class="target" id="target2"></div>
+
+            <!-- Add more target elements here -->
+        </div>
+    </main>
+    <script src="E:\HTML\CHATGPT\JAVASCRIPT GAME\script.js"></script>
+</body>
+</html>
